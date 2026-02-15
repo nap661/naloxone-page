@@ -605,3 +605,128 @@ body { --shadow: 0 22px 44px rgba(2,6,23,.16), 0 8px 18px rgba(2,6,23,.10); }
 .gradient.green {
   background: linear-gradient(180deg, #F1FFB5 0%, #D8F364 100%) !important; /* bright soft yellow-green */
 }
+/* ============================================================
+   EXACT MATCH FIX — SECTION 1 (HERO) + SECTION 4 + SECTION 6
+   ============================================================ */
+
+/* ---------- SECTION 1: HERO BACKGROUND (WHITE) ---------- */
+.hero {
+  background: #ffffff !important;
+  padding: 70px 0 60px !important;
+}
+
+/* Hero grid layout */
+.hero-grid {
+  display: grid !important;
+  grid-template-columns: 1.3fr 1fr !important;
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+/* ---------- LEFT HERO CARD (LIME) ---------- */
+.hero-card {
+  background: #D8F364 !important; /* exact lime */
+  border-radius: 26px !important;
+  padding: 48px 40px !important;
+  box-shadow: 0 26px 60px rgba(0,0,0,.14) !important;
+}
+
+.hero-card h1 {
+  font-size: 44px !important;
+  line-height: 1.12 !important;
+  font-weight: 700 !important;
+  color: #0b1220 !important;
+}
+
+.hero-card p {
+  font-size: 18px !important;
+  color: #0b1220 !important;
+}
+
+/* ---------- RIGHT HERO BOX (BLUE) ---------- */
+.hero-social {
+  background: #3B63F0 !important;
+  padding: 40px 30px !important;
+  border-radius: 28px !important;
+  box-shadow: 0 26px 60px rgba(0,0,0,.22) !important;
+}
+
+/* Blue card image styling */
+.hero-social .avatar-stack img {
+  width: 260px !important;
+  height: 260px !important;
+  border-radius: 26px !important;
+  object-fit: cover !important;
+  outline: 3px solid rgba(255,255,255,.4) !important;
+}
+
+/* Icon dots under image */
+.social-dots {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  margin-top: 20px !important;
+}
+
+.social-dots .dot {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+}
+
+/* ---------- SECTION 6: PROGRAM BAND (BRIGHT LIME GRADIENT) ---------- */
+
+.gradient.green {
+  background: linear-gradient(180deg,#D8F364 0%, #F1FF81 100%) !important;
+  padding: 70px 0 !important;
+}
+
+/* White program cards */
+.card.feature {
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  padding: 24px !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,.15) !important;
+  text-align: center !important;
+}
+
+.card.feature .icon {
+  background: #3B63F0 !important;
+  color: #ffffff !important;
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 12px !important;
+  line-height: 52px !important;
+  font-size: 30px !important;
+  margin-bottom: 18px !important;
+}
+
+/* ---------- SECTION 4: TRAINING CARDS ---------- */
+
+.card.training {
+  background: #ffffff !important;
+  border-radius: 22px !important;
+  padding: 24px !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 22px 50px rgba(0,0,0,.1) !important;
+}
+
+.badge.live {
+  background:#14BFA0 !important;
+  color:#fff !important;
+}
+
+.badge.open {
+  background:#3B63F0 !important;
+  color:#fff !important;
+}
+
+.btn-card {
+  background:#F3C623 !important;
+  border-radius:999px !important;
+  padding:12px 0 !important;
+  font-weight:700 !important;
+  border:none !important;
+}
+``
