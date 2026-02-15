@@ -836,3 +836,43 @@ section.hero .hero-card {
 section#solutions.gradient.green {
   background: linear-gradient(180deg, #D8F364 0%, #F1FF81 100%) !important;
 }
+/* ==========================================================
+   APPLY NEW BRAND COLOURS — HERO SECTION
+   ========================================================== */
+
+/* Hero background MUST stay white */
+.hero,
+section.hero {
+  background: #FFFFFF !important;
+}
+
+/* Left hero card — use Vibrant Lime */
+.hero .hero-card {
+  background: #84FF1F !important; /* vibrant lime */
+  color: #0B1220 !important;
+  border-radius: 26px !important;
+  padding: 48px 40px !important;
+  box-shadow: 0 26px 60px rgba(0,0,0,.14) !important;
+}
+
+/* Right hero card — use Tech Turquoise instead of blue */
+.hero .hero-social {
+  background: #1CD8D2 !important; /* tech turquoise */
+  border-radius: 28px !important;
+  padding: 40px 30px !important;
+  box-shadow: 0 26px 60px rgba(0,0,0,.18) !important;
+}
+
+.hero .hero-social .avatar-stack img {
+  width: 260px !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  border-radius: 26px !important;
+  outline: 3px solid rgba(255,255,255,.40) !important;
+}
+
+/* Social dots pop more against the turquoise */
+.hero .social-dots .dot.fb { background: #1CD8D2 !important; }
+.hero .social-dots .dot.ig { background: #FF3F9A !important; }
+.hero .social-dots .dot.tw { background: #000 !important; }
+.hero .social-dots .dot.yt { background: #FFD93D !important; }
