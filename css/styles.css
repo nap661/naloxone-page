@@ -876,3 +876,37 @@ section.hero {
 .hero .social-dots .dot.ig { background: #FF3F9A !important; }
 .hero .social-dots .dot.tw { background: #000 !important; }
 .hero .social-dots .dot.yt { background: #FFD93D !important; }
+/* ==========================================================
+   APPLY NEW BRAND COLOURS — SECTION 6 PROGRAM BAND
+   ========================================================== */
+
+#solutions.gradient.green,
+section#solutions.gradient.green {
+  background: linear-gradient(
+    180deg,
+    #84FF1F 0%,   /* vibrant lime */
+    #1CD8D2 100%  /* turquoise */
+  ) !important;
+  padding: 70px 0 !important;
+}
+
+/* White program feature cards stay the same but stand out more */
+#solutions .card.feature {
+  background: #FFFFFF !important;
+  border-radius: 24px !important;
+  padding: 24px !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,.15) !important;
+  text-align: center !important;
+}
+
+/* Icon background uses turquoise now */
+#solutions .card.feature .icon {
+  background: #1CD8D2 !important;
+  color: #FFFFFF !important;
+  border-radius: 12px !important;
+  width: 52px !important;
+  height: 52px !important;
+  line-height: 52px !important;
+  font-size: 30px !important;
+  margin-bottom: 18px !important;
+}
