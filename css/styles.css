@@ -545,3 +545,63 @@ body { --shadow: 0 22px 44px rgba(2,6,23,.16), 0 8px 18px rgba(2,6,23,.10); }
   color: white !important;
   margin-bottom: 16px !important;
 }
+/* ==========================================
+   SECTION 1 — FIX HERO BACKGROUND + CARDS
+   ========================================== */
+
+/* 1) Hero section background MUST be white */
+.hero {
+  background: #ffffff !important;
+  padding: 80px 0 60px !important;
+}
+
+/* 2) HERO GRID — spacing + shape */
+.hero-grid {
+  display: grid !important;
+  grid-template-columns: 1.4fr 1fr !important;
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+/* 3) LEFT HERO CARD — lime card ONLY */
+.hero-card {
+  background: #D8F364 !important; /* lime like screenshot */
+  border-radius: 26px !important;
+  padding: 50px 40px !important;
+  box-shadow: 0 25px 60px rgba(0,0,0,.14) !important;
+  outline: none !important;
+}
+
+/* 4) Right hero box MUST be solid blue */
+.hero-social {
+  background: #3B63F0 !important;
+  padding: 40px 30px !important;
+  border-radius: 28px !important;
+  box-shadow: 0 25px 60px rgba(0,0,0,.15) !important;
+}
+
+/* 5) FIX IMAGE INSIDE BLUE BOX */
+.hero-social .avatar-stack img {
+  width: 260px !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  border-radius: 26px !important;
+  box-shadow: none !important;
+  outline: 2px solid rgba(255,255,255,.15) !important;
+}
+
+/* 6) FIX SOCIAL DOTS INSIDE BLUE BOX */
+.hero-social .social-dots .dot {
+  width: 18px !important;
+  height: 18px !important;
+  box-shadow: none !important;
+  border-radius: 30px !important;
+}
+
+/* ==========================================
+   UNDO incorrect lime background from before
+   ========================================== */
+
+.gradient.green {
+  background: linear-gradient(180deg, #F1FFB5 0%, #D8F364 100%) !important; /* bright soft yellow-green */
+}
