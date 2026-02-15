@@ -815,3 +815,24 @@ body, .hero { background:#FFFFFF !important; }
   background:#FFFFFF !important;
 }``
 https://naloxone-page.pages.dev/
+/* ————————————————————————————
+   FINAL HERO FIX • STOP GREEN BLEED
+   ———————————————————————————— */
+
+/* Force hero to stay white no matter what */
+body section.hero,
+section.hero,
+.hero {
+  background: #ffffff !important;
+}
+
+/* Only the left hero card should be lime */
+section.hero .hero-card {
+  background: #D8F364 !important;
+}
+
+/* Only Section 6 gets the gradient */
+#solutions.gradient.green,
+section#solutions.gradient.green {
+  background: linear-gradient(180deg, #D8F364 0%, #F1FF81 100%) !important;
+}
