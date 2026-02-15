@@ -277,3 +277,51 @@ h2{ font-size:32px; line-height:1.2; letter-spacing:-.1px; margin:8px 0 }
   .menu.open{ display:flex }
   .footer-grid{ grid-template-columns:1fr }
 }
+/* ===== DEBUG FORCE (TEMPORARY) ===== */
+body { --shadow: 0 22px 44px rgba(2,6,23,.16), 0 8px 18px rgba(2,6,23,.10); }
+
+/* Header + brand spacing */
+.topband .nav { padding: 16px 0 !important; }
+.brand img { width: 48px !important; height: 48px !important; }
+.brand span { font-size: 15px !important; font-weight: 900 !important; }
+
+/* Hero: chunkier card + ring */
+.hero-card{
+  border-radius: 24px !important;
+  outline: 2px solid rgba(59,99,240,.10) !important;
+  box-shadow: var(--shadow) !important;
+  padding: 32px 28px !important;
+}
+.avatar-stack img{
+  width: 320px !important; height: 230px !important; border-radius: 20px !important;
+  outline: 2px solid rgba(0,0,0,.06) !important;
+}
+
+/* KPI strip look */
+.kpis { background: #3B63F0 !important; padding: 24px 0 !important; }
+.kpi strong { font-size: 32px !important; }
+
+/* Training cards: badges + hover */
+.card.training { border-radius: 22px !important; }
+.badge { border: 1px solid rgba(0,0,0,.08) !important; }
+.card.training:hover { transform: translateY(-3px) !important; }
+
+/* Quote card: red corner accent */
+.quote-card::after{
+  content:""; position:absolute; right: 14px; bottom: 14px;
+  width: 22px; height: 22px; background: #FFD9D9; border-radius: 6px;
+}
+
+/* Program band + steps + emergency banner */
+.gradient.green { background: linear-gradient(180deg,#EAF7C8 0%, #DFF5B4 100%) !important; }
+.step.blue { background: #3B63F0 !important; }
+.step.magenta { background: #E756A5 !important; }
+.alert { border: 2px solid rgba(0,0,0,.06) !important; border-radius: 14px !important; }
+
+/* Testimonials gradient band + white quote cards */
+.testimonials.gradient.blue { background: linear-gradient(180deg,#3B63F0 0%, #A6E12E 100%) !important; }
+.testimonials .card.quote { background: #fff !important; border-radius: 18px !important; }
+
+/* Footer depth */
+.footer { background: #0B1220 !important; }
+.footer input { background: #0F172A !important; border: 1px solid #334155 !important; }
